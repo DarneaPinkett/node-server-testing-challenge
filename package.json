@@ -2,9 +2,8 @@
   "name": "node-server-testing",
   "version": "1.0.0",
   "description": "Node Server Testing Challenge",
-  "main": "server.js",
   "scripts": {
-    "start:watch": "nodemon index.js",
+    "start:watch": " nodemon index.js",
     "start": "node index.js",
     "test": "jest",
     "test:watch": "jest --watch"
