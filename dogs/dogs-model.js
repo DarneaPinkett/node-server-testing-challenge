@@ -15,8 +15,22 @@ async function create(data) {
     return findById(id)
 }
 
+function update(id, changes) {
+    return db('dogs')
+    .update(changes)
+    .where({id})
+}
+
+function remove(id) {
+    return db('dogs')
+    .del()
+    .where({id})
+}
+
 module.exports = {
     find,
     findById,
-    create
+    create,
+    update,
+    remove
 }
