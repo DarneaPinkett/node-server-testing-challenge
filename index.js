@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000
 server.use(cors())
 server.use(express.json())
 
-server.use("/Dogs", dogsRouter)
+server.use("/dogs", dogsRouter)
 server.get("/", (req, res) => {
     res.json({
         message: "Welcome to the Pound",
